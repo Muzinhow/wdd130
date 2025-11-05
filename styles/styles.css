@@ -1,9 +1,24 @@
 body{
-    background-color: rgb(191, 217, 226);
+    background-color: aliceblue;
 }
 
 main{
     max-width: 1020px;
+}
+
+nav{
+    background-color: lightblue;
+    padding: 5px;
+}
+
+nav a{
+    color: white;
+    padding: 5px;
+    display: block;
+}
+
+h1{
+    color: white;
 }
 
 aside{
@@ -32,5 +47,5 @@ p{
 footer{
     margin-top: 10px;
     border-top: 1px solid lightgrey;
-    align-content: center;
+    text-align: center;
 }
