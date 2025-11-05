@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(191, 217, 226);
+}
+
+main{
+    max-width: 1020px;
+}
+
+aside{
+    width: 200px;
+    margin: 15px;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: rgb(198, 244, 255);
+    color: black;
+}
+
+aside img{
+    width: 200px;
+    height: auto;
+}
+
+main img{
+    width: 150px;
+    height: auto;
+}
+
+p{
+    padding: 0;
+}
+
+footer{
+    margin-top: 10px;
+    border-top: 1px solid lightgrey;
+    align-content: center;
+}
