@@ -38,6 +38,9 @@ aside img{
 main img{
     width: 150px;
     height: auto;
+    border: 1px solid white;
+    padding: 3px;
+    box-shadow: 1px 1px 3px black;
 }
 
 p{
