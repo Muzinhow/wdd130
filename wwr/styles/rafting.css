@@ -44,6 +44,7 @@ header{
 header nav{
     display: flex;
     justify-content: center;
+    font-size: large;
 }
 
 header ul{
