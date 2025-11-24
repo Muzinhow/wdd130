@@ -1,3 +1,6 @@
+/* =========================
+   Vars & Reset
+   ========================= */
 :root{
     --primary-color: black;
     --secondary-color: #EB552A;
@@ -14,6 +17,9 @@
     box-sizing: border-box;
 }
 
+/* =========================
+   Base
+   ========================= */
 body{
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -24,6 +30,9 @@ header, main, footer{
     margin: auto;
 }
 
+/* =========================
+   Header & Nav
+   ========================= */
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,6 +63,9 @@ header a:hover{
     opacity: 0.5;
 }
 
+/* =========================
+   Generic Elements
+   ========================= */
 h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -65,6 +77,9 @@ nav, p, article{
     padding: 8px;
 }
 
+/* =========================
+   Sections
+   ========================= */
 section{
     margin: 16px 0 0 0;
     background-color: rgb(196, 220, 255);
@@ -77,10 +92,15 @@ section p{
     padding: 20px;
 }
 
-.socialmedia a{
-    text-decoration: none;
+section h2{
+    background-color: rgb(156, 182, 255);
+    padding: 16px;
+    margin: 0;
 }
 
+/* =========================
+   Hero
+   ========================= */
 .hero{
     position: relative;
 }
@@ -89,64 +109,6 @@ section p{
     display: block;
     width: 100%;
     height: auto;
-}
-
-.history{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.history h2{
-    grid-column: span 3;
-}
-
-.history img{
-    margin: 20px 0 0 0;
-    border: 2px solid darkblue;
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-    text-align: center;
-}
-
-figure{
-    margin: 10px 0 10px 0;
-}
-
-figcaption{
-    color: var(--primary-color);
-}
-
-section h2{
-    background-color: rgb(156, 182, 255);
-    padding: 16px;
-    margin: 0px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    padding: 0;
-}
-
-footer p{
-    color: var(--primary-color);
-    text-align: center;
-}
-
-footer nav{
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-footer nav a{
-    display: flex;
 }
 
 h1{
@@ -164,7 +126,7 @@ article{
     position: absolute;
     top: 305px;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     padding-top: 10px;
     opacity: 0.8;
     background-color: var(--primary-color);
@@ -174,4 +136,60 @@ article{
     margin: 0 10px 0 0;
     float: right;
     width: 150px;
+}
+
+/* =========================
+   History Section
+   ========================= */
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.history h2{
+    grid-column: span 3;
+}
+
+.history img{
+    margin: 20px 0 0 0;
+    border: 2px solid darkblue;
+}
+
+/* =========================
+   Gallery
+   ========================= */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+figure{
+    margin: 10px 0 0 0;
+}
+
+figcaption{
+    color: var(--primary-color);
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer p{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav a{
+    display: flex;
+}
+
+.socialmedia a{
+    text-decoration: none;
 }
