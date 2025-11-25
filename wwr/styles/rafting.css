@@ -4,9 +4,11 @@
 :root{
     --primary-color: black;
     --secondary-color: #EB552A;
-    --tertiary-color: blue;
+    --tertiary-color: rgb(156, 182, 255);
     --accent1-color: rgb(255, 255, 255);
     --accent2-color: #965D4D;
+    --accent3-color: rgb(196, 220, 255);
+    --accent4-color: blue;
     --heading-font: 'Times New Roman', Times, sans-serif;
     --body-font: Arial, sans-serif;
 }
@@ -57,7 +59,7 @@ header ul{
 
 header a{
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--accent4-color);
 }
 
 header a:hover{
@@ -83,7 +85,7 @@ nav, p, article{
    ========================= */
 section{
     margin: 16px 0 0 0;
-    background-color: rgb(196, 220, 255);
+    background-color: var(--accent3-color);
 }
 
 section p{
@@ -112,7 +114,7 @@ section h2{
     height: auto;
 }
 
-h1{
+.hero h1{
     position: absolute;
     top: 10px;
     width: 100%;
@@ -123,7 +125,7 @@ h1{
     color: var(--accent1-color);
 }
 
-article{
+.hero article{
     position: absolute;
     top: 305px;
     width: 100%;
@@ -137,6 +139,7 @@ article{
     margin: 0 10px 0 0;
     float: right;
     width: 150px;
+    border: 1px solid var(--accent1-color);
 }
 
 /* =========================
@@ -153,7 +156,7 @@ article{
 
 .history img{
     margin: 20px 0 0 0;
-    border: 2px solid darkblue;
+    border: 2px solid var(--tertiary-color);
 }
 
 /* =========================
