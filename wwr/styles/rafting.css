@@ -286,6 +286,7 @@ section h2{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 12px;
+    max-width: 300px;
     margin: 20px auto 0 auto;
 }
 
