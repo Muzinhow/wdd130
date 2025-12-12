@@ -3,10 +3,11 @@
    ========================= */
 :root{
     --primary-color: black;
-    --secondary-color: rgb(156, 182, 255);
+    --secondary-color: rgb(255, 238, 0);
     --accent1-color: rgb(255, 255, 255);
-    --accent2-color: rgb(196, 220, 255);
-    --accent3-color: blue;
+    --accent2-color: rgb(209, 143, 0);
+    --accent3-color: rgb(119, 119, 119);
+    --accent4-color: rgb(197, 118, 0);
     --heading-font: 'Times New Roman', Times, sans-serif;
     --body-font: Arial, sans-serif;
 }
@@ -38,16 +39,17 @@ header{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 20px;
-    background: var(--accent1-color);
-    border: 5px solid var(--accent2-color);
+    background: var(--accent4-color);
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 header nav{
     display: flex;
     justify-content: center;
     font-size: large;
+    padding: 20px 0 20px 0;
+    border-left: 1px solid var(--accent3-color);
+    border-right: 1px solid var(--accent3-color);
 }
 
 header ul{
@@ -59,12 +61,13 @@ header ul{
 }
 
 header a{
+    text-shadow: 1px 1px 3px var(--primary-color);
+    color: var(--accent1-color);
     text-decoration: none;
-    color: var(--accent3-color);
 }
 
 header a:hover{
-    opacity: 0.5;
+    filter: brightness(0.7);
 }
 
 /* =========================
@@ -182,13 +185,17 @@ section{
 
 section p{
     text-align: center;
-    color: var(--primary-color);
+    color: var(--accent1-color);
+    text-shadow: 1px 1px 3px var(--primary-color);
     margin: 0 0 20px 0;
     padding: 20px;
 }
 
 section h2{
-    background-color: rgb(156, 182, 255);
+    background-color: var(--accent4-color);
+    color: var(--accent1-color);
+    border-bottom: 1px solid var(--accent3-color);
+    text-shadow: 1px 1px 3px var(--primary-color);
     padding: 16px;
     margin: 0;
 }
@@ -212,7 +219,7 @@ section h2{
     width: 100%;
     padding: 14px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--primary-color);
     color: var(--accent1-color);
 }
@@ -224,6 +231,7 @@ section h2{
     margin: 0;
     padding-top: 10px;
     opacity: 0.8;
+    color: var(--accent1-color);
     background-color: var(--primary-color);
 }
 
@@ -232,6 +240,183 @@ section h2{
     float: right;
     width: 150px;
     border: 1px solid var(--accent1-color);
+}
+
+/* =========================
+   Hero button
+   ========================= */
+
+.button{
+    position: absolute;
+    display: flex;
+    top: 370px;
+    left: 40%;
+    width: 20%;
+    height: 40px;
+    font-size: large;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: var(--accent1-color);
+    background-color: var(--accent4-color);
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.button:hover{
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+/* =========================
+   Newsletter
+   ========================= */
+.newsletter{
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.newsletter h2{
+    margin-top: 0px;
+}
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+}
+
+/* =========================
+   Purpose
+   ========================= */
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.purpose-grid .item h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--accent1-color);
+    text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+.purpose-grid .item p {
+    margin-top: 6px;
+    color: var(--accent1-color);
+}
+
+/* =========================
+   Contact section
+   ========================= */
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.contact-us h2{
+    width: 100%;
+}
+
+.contact-us a{
+    margin: 10px;
+}
+
+/* =========================
+   Contact button
+   ========================= */
+.button-contact{
+    display: flex;
+    top: 370px;
+    width: 20%;
+    height: 40px;
+    font-size: large;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: var(--accent1-color);
+    background-color: var(--accent4-color);
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px var(--primary-color);
+}
+
+.button-contact:hover{
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+/* =========================
+   Trips Section
+   ========================= */
+.trips {
+    margin: 20px 0;
+    background-color: var(--accent2-color);
+    padding-bottom: 20px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--secondary-color);
+}
+
+.trip h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--accent1-color);
+}
+
+.trip p {
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.trips-table {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    color: black;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.trips-table th {
+    background: var(--accent2-color);
+    font-weight: bold;
+}
+
+.trips-table tr:nth-child(even) {
+    background: var(--accent4-color);
 }
 
 /* =========================
@@ -265,8 +450,13 @@ figure{
     margin: 10px 0 0 0;
 }
 
+figure img{
+    border: 2px solid var(--secondary-color);
+}
+
 figcaption{
-    color: var(--primary-color);
+    color: var(--accent1-color);
+    text-shadow: 1px 1px 3px var(--primary-color);
 }
 
 /* =========================
@@ -275,6 +465,10 @@ figcaption{
 #employees{
     grid-template-columns: repeat(3, 1fr);
     padding: 5px;
+}
+
+#employees img{
+    border: 2px solid var(--secondary-color);
 }
 
 /* =========================
